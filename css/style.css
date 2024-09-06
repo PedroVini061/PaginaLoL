@@ -1,0 +1,326 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1f8ecd;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+nav {
+    margin: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px;
+}
+
+.banner-container {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.highlight-item {
+    flex: 1;
+    background-color: #f7f7f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f8ecd;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+.highlight-item:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+/* Estilos gerais do contêiner */
+.champions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Aumenta o espaço entre os campeões */
+    padding: 20px;
+    background-color: #1e2a38;
+    border-radius: 10px;
+}
+
+/* Cada card de campeão */
+.champion {
+    background-color: #2c3e50;
+    border-radius: 15px;
+    padding: 30px;
+    flex: 1 1 calc(45% - 40px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 100%;
+}
+
+.champion:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.champion h2 {
+    color: #ecf0f1;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+.champion img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #4a90e2; /* Aumenta a borda */
+}
+
+.champion p {
+    font-size: 1.2rem; 
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .champion {
+        flex: 1 1 100%; 
+    }
+}
+/* Estilo específico para o mapa Summoner's Rift */
+
+.mapa-summoners {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+}
+
+.mapa-summoners h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+.mapa-summoners img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #4a90e2;
+}
+
+.mapa-summoners p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.mapa-summoners h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #ecf0f1;
+}
+/* Estilo específico para o mapa ARAM */
+
+.mapa-aram {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+}
+
+.mapa-aram h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+.mapa-aram img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #4a90e2;
+}
+
+.mapa-aram p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.mapa-aram h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #ecf0f1;
+}
+/* Estilos específicos para a página de História */
+
+.intro-lore {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ecf0f1;
+}
+
+.lore-content {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+}
+
+.lore-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #4a90e2;
+}
+
+.lore-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bdc3c7;
+    text-align: center;
+}
+/* Atualização apartir daqui */
+
+.lore-content h3 {
+    font-size: 1.75em;
+    color: #fff; 
+    margin: 30px 0 15px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.lore-content p {
+    font-size: 1.1em;
+    color: #ddd; 
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.lore-content ul {
+    margin: 15px 0;
+    padding-left: 30px;
+    color: #ddd; 
+}
+
+.lore-content ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.lore-content ul li strong {
+    color: #fff; 
+    font-weight: bold;
+}
+
+section {
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+section h3 {
+    font-size: 1.5em; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+section ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+section ul li {
+    margin-bottom: 10px; 
+}
+
+section ul li a {
+    color: #0066cc; 
+    text-decoration: none; 
+}
+
+section ul li a:hover {
+    text-decoration: underline; 
+}
