@@ -1,4 +1,6 @@
-/* Reset básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Permanent+Marker&family=Roboto+Slab:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto Slab", serif;
     background-color: #f0f0f5;
     color: #333;
     line-height: 1.6;
@@ -28,6 +30,7 @@ header {
     background-color: #1f8ecd;
     color: white;
     border-radius: 10px 10px 0 0;
+    font-family: "Jacques Francois Shadow", serif;
 }
 
 nav {
@@ -55,6 +58,12 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #555;
+    color: aqua;
+}
+.active{
+    background-color: #555;
+    border-radius: 5px;
+    height: 35px;
 }
 
 .content {
@@ -293,34 +302,3 @@ footer {
     font-weight: bold;
 }
 
-section {
-    background-color: #f9f9f9;
-    border-radius: 8px; 
-    padding: 20px;
-    margin: 20px 0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-section h3 {
-    font-size: 1.5em; 
-    color: #333; 
-    margin-bottom: 10px; 
-}
-
-section ul {
-    list-style-type: disc; 
-    padding-left: 20px; 
-}
-
-section ul li {
-    margin-bottom: 10px; 
-}
-
-section ul li a {
-    color: #0066cc; 
-    text-decoration: none; 
-}
-
-section ul li a:hover {
-    text-decoration: underline; 
-}
